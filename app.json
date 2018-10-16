@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/video/video",
+    "pages/news/news",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F2F2F2",
+    "navigationBarTitleText": "打球吧",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "赛事",
+        "iconPath": "/img/saishi.png",
+        "selectedIconPath": "/img/hsaishi.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "/img/zixun.png",
+        "selectedIconPath": "/img/hzixun.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/img/shipin.png",
+        "selectedIconPath": "/img/hshipin.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "selectedColor": "#0099FF"
+  }
+
+}

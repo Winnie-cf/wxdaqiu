@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<!-- 轮播图 -->
+<swiper class='wx-swiper' indicator-color="#fff" indicator-active-color="#ff9801" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.img_src}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="icon-box">
+  <view class="grid" wx:for="{{navtab}}">
+    <image src="{{item.icon}}" class="icons" width="20" height="20"></image>
+    <text class="text">{{item.title}}</text>
+  </view>
+</view>
+<view style='padding:0 20rpx;'>
+<view class="title-box">
+  <view class="title"><text calss="text">赛事看点</text></view>
+</view>
+  <view class='list' wx:for="{{list}}">
+ <view class='list-left'><image class='list-img' src='{{item.img}}'></image></view>
+  <view class='list-right'>
+    <view class='list-text'><text class='text-style'>{{item.content}}</text></view>
+    <view class='list-text'><text class='text-style'>{{item.date}}</text></view>
+  </view>
+ </view>
+</view>

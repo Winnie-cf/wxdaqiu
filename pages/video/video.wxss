@@ -1,0 +1,78 @@
+/* pages/video/video.wxss */
+.container {
+  width:100%;
+  height: 100%;
+  padding: 20rpx;
+}
+.card {
+  position: relative;
+  margin: 10px;
+  height: 360rpx;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%; 
+}
+.text {
+  font: normal 12px arial, sans-serif;
+  color: #fff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.btn {
+  padding: 0 40rpx;
+  float: right;
+  background-color: #59ACFF;
+  color: #fff;
+  border-radius: 1.0rem;
+  background: -webkit-linear-gradient(left, #59ACFF, #369BFF);
+  background: -o-linear-gradient(right, #59ACFF, #369BFF);
+  background: -moz-linear-gradient(right, #59ACFF, #369BFF);
+  background: linear-gradient(to right, #59ACFF, #369BFF);
+}
+
+.label {
+  /*margin-top: 0px;*/
+  height: 60rpx;
+  width: 100rpx;
+  text-align: center;
+  font: normal 10px/60rpx PingFang-SC-Regular;
+  color: #fff;
+}
+.flex-demo {
+  width: 100%;
+  float: left;
+  color: #fff;
+  border-radius: 4px;
+  background-clip: padding-box;
+}
+
+.card-top {
+  position: absolute;
+  bottom: 20rpx;
+  left:20rpx;
+  /* height: 100%; */
+  /* margin: 0px 10px 12px 10px; */
+  padding-top: 200rpx;
+  /*text-align: center;*/
+}
+.tabbar{
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  border-bottom: 10rpx solid #eee;
+}
+.current{
+  font-size: 16px;
+  color: #2D94FC;
+  border-bottom: 2px solid #2D94FC;
+}
+.tab{
+  width: 50%;
+  float: left;
+  font-size: 14px;
+}

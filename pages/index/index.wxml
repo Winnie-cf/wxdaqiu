@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  
+    <view wx:for="{{listData}}" class="card" style="background-image:url({{item.img}})">
+      <navigator url='/pages/detail/detail'>
+        <view class='card-top'>
+          <view class="ptext">
+          <p class="text">{{item.title}}</p>
+          <p class="text">{{item.group}}：{{item.battle}}</p>
+          </view>
+          <view class="flex-demo">
+            <text class="label btn">立即查看</text>
+          </view>
+        </view>
+      </navigator>       
+    </view>
+</view>

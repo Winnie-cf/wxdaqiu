@@ -1,0 +1,19 @@
+<!--pages/video/video.wxml-->
+<view class="container">
+<view class='tabbar'>
+  <view class='tab' bindtap='newlist'><text wx:if="{{index===1}}" class='current'>最新推荐</text><text wx:else >最新推荐</text></view>
+  <view class='tab' bindtap='hotlist'><text wx:if="{{index===2}}" class='current' >热门精选</text><text wx:else >热门精选</text></view>
+</view>
+      
+    <view wx:for="{{listData}}" class="card" style="background-image:url({{item.img}})">
+      <view class='card-top'>
+        <view class="flex-demo">
+        <p class="text">{{item.title}}</p>
+        <p class="text">{{item.group}}：{{item.battle}}</p>
+        </view>
+        
+      </view>
+    </view>
+    
+</view>
+
